@@ -15,6 +15,11 @@ mv .env.sample .env
 ```javascript
 node index.js
 ```
+> :warning: Be aware to be inside the scripts folder, as Node.JS might not find the necessary files since the CWD (current working directory) might be somewhere else!
+> i fixed that issue with:
+> ```bash
+> cd <scripts_folder> && node index.js
+
 4. Hook up your apps to write on the emails.sqlite database file created on the root directory
 
 | Column name   | Description      | 
